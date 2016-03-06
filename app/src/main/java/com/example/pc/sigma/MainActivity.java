@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 lastvalue = Integer.parseInt(editLastValue.getText().toString());
 
                 TextView textStartValue = (TextView)findViewById(R.id.textstartvalue);
-                textStartValue.setText(mySgimaByFor(startvalue, lastvalue));
+                textStartValue.setText(""+mySgimaByFor(startvalue, lastvalue));
             }
         });
 
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 lastvalue = Integer.parseInt(editLastValue.getText().toString());
 
                 TextView textLastValue = (TextView)findViewById(R.id.textlastvalue);
-                textLastValue.setText(mySigmaFomula(startvalue, lastvalue));
+                textLastValue.setText(""+mySigmaFomula(startvalue, lastvalue));
             }
         });
 
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
     public int mySgimaByFor(int startvalue, int lastvalue){
 
-        for(int i=startvalue; i<lastvalue; i++){
+        for(int i=startvalue; i<=lastvalue; i++){
             result += i;
         }
 
